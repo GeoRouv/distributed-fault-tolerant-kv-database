@@ -23,7 +23,7 @@ Run the following command to create data for the next steps:
 
     $ python3 createData.py -k keyFile.txt -n 15 -d 2 -l 15 -m 8
 
-where,
+where,  
 -n: indicates the number of lines (i.e. separate data) that we would like to generate   
 -d: maximum level of nesting  
 -m: maximum number of keys inside each value  
@@ -31,7 +31,7 @@ where,
 -k keyFile.txt: file containing a space-separated list of key names and their data types (this is already included, supports {int, float, string})  
 
 ### Key Value Store
-1.kvServer
+#### kvServer
 
 First of all, launch the servers (at localhost) using the following command(s):
 
@@ -45,7 +45,7 @@ where,
 -p is the port
 
 
-2.kvBroker
+#### kvBroker
 
 After servers are on, use the command below to launch the client:
 
@@ -67,9 +67,8 @@ Indexing should then start, and after is finished, KVbroker accepts queries from
     $ QUERY person3.age
     $ EXIT
 
-To exit the CLI mode of kvBroker type "EXIT". 
+To exit the CLI mode of kvBroker type "EXIT".   
 
-
-
+  
 The commands listed in this README were mainly used for debugging/testing.  
 Feel free to change the parameters as you desire.
