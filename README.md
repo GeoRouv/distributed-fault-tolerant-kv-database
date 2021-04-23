@@ -21,24 +21,24 @@ data files, so terminals - commands must be run inside that directory.
 
 Run the following command to create data for the next steps:
 
-$python3 createData.py -k keyFile.txt -n 15 -d 2 -l 15 -m 8
+    $python3 createData.py -k keyFile.txt -n 15 -d 2 -l 15 -m 8
 
 where,
--n​ indicates the number of lines (i.e. separate data) that we would like to generate 
--d ​is the maximum level of nesting
--m​ is the maximum number of keys inside each value
--l ​is the maximum length of a string value when generated
--k keyFile.txt ​is a file containing a space-separated list of key names and their data types (this is already included, supports {int, float, string})
+-n: indicates the number of lines (i.e. separate data) that we would like to generate 
+-d: maximum level of nesting
+-m: maximum number of keys inside each value
+-l: maximum length of a string value when generated
+-k keyFile.txt: file containing a space-separated list of key names and their data types (this is already included, supports {int, float, string})
 
 ### Key Value Store
 1.kvServer
 
 First of all, launch the servers (at localhost) using the following command(s):
 
-$python3 kvServer.py -a 127.0.0.1 -p 8000
-$python3 kvServer.py -a 127.0.0.1 -p 8001
-$python3 kvServer.py -a 127.0.0.1 -p 8002
-$python3 kvServer.py -a 127.0.0.1 -p 8003
+    $python3 kvServer.py -a 127.0.0.1 -p 8000
+    $python3 kvServer.py -a 127.0.0.1 -p 8001
+    $python3 kvServer.py -a 127.0.0.1 -p 8002
+    $python3 kvServer.py -a 127.0.0.1 -p 8003
 
 where,
 -a is the (localhost) ip_address
@@ -49,7 +49,7 @@ where,
 
 After servers are on, use the command below to launch the client:
 
-$python3 kvBroker.py -s serverFile.txt -i dataToIndex.txt -k 4
+    $python3 kvBroker.py -s serverFile.txt -i dataToIndex.txt -k 4
 
 where,
 -s is a text file indicating that this broker will be working with a numbers servers with the IPs described and on the respective ports described
@@ -58,14 +58,14 @@ where,
 
 Indexing should then start, and after is finished, KVbroker accepts queries from standard input. Some examples (using the data file in the src directory):
 
-$GET person0
-$GET person9
-$QUERY person9.level.age
-$QUERY person8.hair_color
-$DELETE person3
-$GET person3
-$QUERY person3.age
-$EXIT
+    $GET person0
+    $GET person9
+    $QUERY person9.level.age
+    $QUERY person8.hair_color
+    $DELETE person3
+    $GET person3
+    $QUERY person3.age
+    $EXIT
 
 To exit the CLI mode of kvBroker type "EXIT". 
 
