@@ -4,14 +4,14 @@ A simple version of a distributed, fault-tolerant, Key-Value (KV) database (or s
 
 ## Prerequisites
 ---
-• Make sure you have python3 (preferably 3.8.5) installed.
-• All libraries used are part of the python standard library.
+• Make sure you have python3 (preferably 3.8.5) installed.  
+• All libraries used are part of the python standard library.  
 • This implementation contains the last task for using only the trie data structure for
 indexing and searching all of the keys (both top-level and within the values and the
-nesting) and no other data structure.
+nesting) and no other data structure.  
 • The folder under the name ”src” contains all the source code and the input-output
-data files, so terminals - commands must be run inside that directory.
-• Read more details on the implementation plan in "Project Report" pdf file.
+data files, so terminals - commands must be run inside that directory.  
+• Read more details on the implementation plan in "Project Report" pdf file.  
 
 
 ## Instructions
