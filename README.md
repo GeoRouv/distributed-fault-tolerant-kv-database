@@ -3,7 +3,7 @@ A simple version of a distributed, fault-tolerant, Key-Value (KV) database (or s
 
 
 ## Prerequisites
------------------------------
+---
 • Make sure you have python3 (preferably 3.8.5) installed.
 • All libraries used are part of the python standard library.
 • This implementation contains the last task for using only the trie data structure for
@@ -15,7 +15,7 @@ data files, so terminals - commands must be run inside that directory.
 
 
 ## Instructions
------------------------------
+---
 
 ### Data Creation
 
