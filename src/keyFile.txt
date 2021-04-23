@@ -1,0 +1,12 @@
+name string
+age int
+height float
+weight float
+street string
+level int
+hair_color string
+family_members int
+married string
+profession string
+location string
+gender string
